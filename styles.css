@@ -1,0 +1,217 @@
+
+main {
+  font-size: 0.80em; /* 14px */
+} 
+
+p {
+  font-size: 1.2em; /* desired / parent */
+  font-family: Arial;
+}
+
+header{
+    color: rgb(19, 9, 83);
+  }
+
+  header ul{
+    /*background-color: rgb(31, 92, 35); */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-variant: small-caps; */
+
+  }
+
+  header ul li{
+    color:rgb(194, 230, 222)
+    
+  } 
+
+  header ul a:link {
+    color: rgb(212, 212, 247);
+  }
+
+  header ul a:visited{
+    color: rgb(138, 212, 138);
+  }
+
+body {
+    background-color: rgb(194, 230, 222);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+
+
+  h1 {
+    color: green;
+    margin-left: 1.25em;
+    border-bottom: 0.125px solid #056337;
+    font-family: 'Ubuntu', sans-serif;
+
+    
+  }
+
+  h2, h3 {
+    color:rgb(19, 9, 83);
+    font-variant: small-caps;
+  }
+
+ h4{
+  color:rgb(47, 114, 91);
+  font-weight: bold;
+}
+  ul {
+    list-style-type: circle;
+    font-size: 1.2em;
+  }
+
+  ol {
+    list-style-type:decimal;
+    font-size: 1.2em;
+  }
+
+  a:link {
+    color: blue;
+  }
+
+  a:visited{
+    color: green;
+  }
+
+  a:hover, a:focus {
+    color: red;
+  }
+
+
+  table, td{
+    border: 0.0625em solid;
+    text-align: center;
+    padding: 0.625em;
+    border-bottom: 1px solid #148740;
+  }
+
+  tr:nth-child(even) {
+    /*background-color: #f2f2f2; */
+  }
+
+  b, strong {
+    color: rgb(56, 44, 143);
+    }
+
+footer{
+  background-color: rgb(31, 92, 35);
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+/* */
+
+/*.item-a {
+  grid-area: header;
+}
+*/
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: .625em;
+  background-color: #fff;
+  color: #444;
+}
+
+
+.header-right{
+  float: right;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+@media (prefers-color-scheme: dark)  {
+  *{
+    background: #1e1e1e;
+    color: white;
+  }
+}
+
+@media (prefers-contrast) {
+  :root {
+    --text-color: black;
+  }
+}
+
+@media (orientation: portrait) {}
+
+#container {  display: flex;}
+
+/*Navigation bar*/
+#nav {
+	margin:0;
+	padding:0;
+}
+#nav li {
+	display:inline;
+	padding:0;
+	margin:0;
+}
+#nav a:link,
+#nav a:visited {
+	color:lightskyblue;
+  padding:20px 40px 4px 10px;
+  /*border-right:1px solid #42432d;*/
+}
+#nav {
+	margin:0;
+	padding:0;
+	background:#175b0e;
+  float:left;
+	width:auto;
+  width:100%;
+  /*border:1px solid #42432d;
+	border-width:1px 0; */
+}
+/* #nav li:first-child a {
+	border-left:1px solid #42432d;
+}
+*/
+#nav a:hover,
+#nav a:focus {
+	color:#fff;
+	background:#6ba369;
+}
+
+
+
+/* Now for CSS Grid for the images*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* trying again */
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 100px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
