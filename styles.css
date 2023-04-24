@@ -10,6 +10,7 @@ p {
 
 header{
     color: rgb(19, 9, 83);
+    padding-top: 20px;
   }
 
   header ul{
@@ -86,7 +87,11 @@ body {
     padding: 0.625em;
     border-bottom: 1px solid #148740;
   }
-
+  aside {
+    float: right;
+    width: 30%;
+    margin-left: 2%;
+  }
   tr:nth-child(even) {
     /*background-color: #f2f2f2; */
   }
@@ -100,7 +105,6 @@ footer{
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 
 
 /* */
@@ -126,11 +130,48 @@ footer{
 }
 
 
+@media screen and (max-width: 768px) {
+  .wrapper {
+    display: block;
+  }
+
+  .box {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    display: block;
+  }
+
+  .box {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (prefers-color-scheme: dark)  {
   *{
     background: #1e1e1e;
     color: white;
+  }
+  h2, h3 {
+    color:rgb(173, 169, 202);
+    font-variant: small-caps;
   }
 }
 
@@ -141,13 +182,24 @@ footer{
 }
 
 @media (orientation: portrait) {}
+/*
+
+/* Styles for smaller screens 
+@media screen and (max-width: 480px) {
+  /* Set images to stack on top of each other 
+  img {
+    display: block;
+    margin: 10px auto;
+  }
+doesn't work
+  */ 
 
 #container {  display: flex;}
 
 /*Navigation bar*/
 #nav {
-	margin:0;
-	padding:0;
+	margin:5px;
+	padding: 5px;
 }
 #nav li {
 	display:inline;
@@ -215,3 +267,30 @@ footer{
   padding: 20px;
   font-size: 150%;
 }
+
+
+
+
+/*TRY 3* CSS grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+/* spacing */
+* {
+  margin: 10;
+  padding: 10;
+}
+
+
+
